@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Uber</string>
+    <string name="btn_entrar">Entrar</string>
+    <string name="btn_cadastrar">Cadastrar</string>
+    <string name="titulo_tela_login">Acessar minha conta</string>
+    <string name="titulo_tela_cadastro">Cadastrar um conta</string>
+    <string name="label_nome">Nome completo</string>
+    <string name="label_email">E-mail</string>
+    <string name="label_senha">Senha</string>
+    <string name="label_passageiro">Passageiro</string>
+    <string name="label_motorista">Motorista</string>
+</resources>
