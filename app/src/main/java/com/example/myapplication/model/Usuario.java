@@ -1,5 +1,9 @@
 package com.example.myapplication.model;
 
+import com.example.myapplication.config.ConfiguracaoFirebase;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.Exclude;
+
 public class Usuario {
 
     private String id;
@@ -36,6 +40,7 @@ public class Usuario {
         this.email = email;
     }
 
+    @Exclude
     public String getSenha() {
         return senha;
     }
@@ -50,5 +55,15 @@ public class Usuario {
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
+    }
+
+    public void salvar() {
+
+        DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebaseDatabase();
+        DatabaseReference usuarios = firebaseRef.child( "usuarios").child(getId());
+
+        usuarios.setValue(this);
+
+
     }
 }

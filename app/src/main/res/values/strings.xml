@@ -9,4 +9,5 @@
     <string name="label_senha">Senha</string>
     <string name="label_passageiro">Passageiro</string>
     <string name="label_motorista">Motorista</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
